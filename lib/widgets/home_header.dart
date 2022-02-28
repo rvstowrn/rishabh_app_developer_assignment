@@ -45,7 +45,7 @@ class _HomeHeaderState extends State<HomeHeader> {
               child: const Icon(CupertinoIcons.square_arrow_right),
               onTap: () {
                 prefs.setBool("authenticated", false);
-                Navigator.pushNamed(context, loginRoute);
+                Navigator.pushReplacementNamed(context, loginRoute);
               },
             ),
           )

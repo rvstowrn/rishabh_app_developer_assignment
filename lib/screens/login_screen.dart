@@ -111,7 +111,7 @@ class _LoginScreenState extends State<LoginScreen> {
       prefs.setBool("authenticated", true);
       usernameController.clear();
       passController.clear();
-      Navigator.pushNamed(context, homeRoute);
+      Navigator.pushReplacementNamed(context, homeRoute);
     } else {
       ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
         content: Text('Invalid username/password'),
