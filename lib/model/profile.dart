@@ -1,3 +1,5 @@
+// Profile Model has dummy data as well because the mock server url
+// is not consistent and has request limits which might cause issues.
 class Profile {
   String menuTitle = "Flyingwolf";
   String name = "Simon Baker";
